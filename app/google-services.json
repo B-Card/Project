@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "226342122159",
+    "project_id": "buscard-1f424",
+    "storage_bucket": "buscard-1f424.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226342122159:android:a4173b3e71082433385a5a",
+        "android_client_info": {
+          "package_name": "com.example.buscard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226342122159-na7bhfe7d8jsl8t3talmrrktltalo9ml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLHY-uhoGn8L-vBBhIPLae0hq_q4rZklE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226342122159-na7bhfe7d8jsl8t3talmrrktltalo9ml.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
