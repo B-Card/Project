@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/gradient_background"
-    tools:context=".TravelHistory">
+    tools:context=".PassengerTravelHistory">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recViewTravelHistoryId"
+        android:id="@+id/recViewPassengerTravelHistoryId"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="1dp"

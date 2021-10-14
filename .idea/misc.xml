@@ -10,20 +10,32 @@
         <entry key="..\:/Project/app/src/main/res/layout/activity_admin_dashboard.xml" value="0.209375" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_bus_details.xml" value="0.1171875" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_card_apply.xml" value="0.1" />
-        <entry key="..\:/Project/app/src/main/res/layout/activity_card_recharge.xml" value="0.103125" />
+        <entry key="..\:/Project/app/src/main/res/layout/activity_card_recharge.xml" value="0.33" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_driver_dashboard.xml" value="0.1" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_driver_passenger_details.xml" value="0.16927083333333334" />
+        <entry key="..\:/Project/app/src/main/res/layout/activity_driver_passenger_travel_history.xml" value="0.1" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_driver_travel_details.xml" value="0.16927083333333334" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_login.xml" value="0.46880907372400754" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_passenger_dashboard.xml" value="0.209375" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_passenger_details.xml" value="0.209375" />
+        <entry key="..\:/Project/app/src/main/res/layout/activity_passenger_travel_history.xml" value="0.1" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_register.xml" value="0.33" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_travel_history.xml" value="0.1171875" />
         <entry key="..\:/Project/app/src/main/res/layout/menu_layout.xml" value="0.1171875" />
+        <entry key="..\:/Project/app/src/main/res/layout/recyclerview_journey.xml" value="0.209375" />
         <entry key="..\:/Project/app/src/main/res/layout/singlerow.xml" value="0.1" />
         <entry key="..\:/Project/app/src/main/res/layout/singlerow2.xml" value="0.209375" />
+        <entry key="..\:/Project/app/src/main/res/layout/singlerow3.xml" value="0.25" />
         <entry key="..\:/Project/app/src/main/res/menu/menu_layout.xml" value="0.1171875" />
+        <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.3458333333333333" />
+        <entry key="app/src/main/res/layout/activity_admin_dashboard.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/activity_card_recharge.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/activity_driver_dashboard.xml" value="0.3296875" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.27307692307692305" />
+        <entry key="app/src/main/res/layout/activity_passenger_dashboard.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="app/src/main/res/menu/menu_layout.xml" value="0.3296875" />
       </map>
     </option>
   </component>

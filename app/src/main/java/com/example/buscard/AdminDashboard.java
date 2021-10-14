@@ -59,9 +59,8 @@ public class AdminDashboard extends AppCompatActivity {
         if(item.getItemId()==R.id.signoutmenu){
 
             FirebaseAuth.getInstance().signOut();
-            finish();
-            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-            startActivity(intent);
+            startActivity ( new Intent ( getApplicationContext (), Login.class ) );
+            finish ();
 
         }
         return super.onOptionsItemSelected(item);

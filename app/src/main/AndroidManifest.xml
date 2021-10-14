@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusCard">
         <activity
-            android:name=".Login"
+            android:name=".PassengerTravelHistory"
+            android:exported="true" />
+        <activity
+            android:name=".PassengerDashboard"
             android:exported="true" />
         <activity
             android:name=".Register"
-            android:exported="true" />
-        <activity
-            android:name=".DriverPassengerDetails"
             android:exported="true" />
         <activity
             android:name=".DriverTravelDetails"
@@ -42,16 +42,11 @@
         <activity
             android:name=".PassengerDetails"
             android:exported="true" />
-        <!--
-<activity
-            android:name=".PassengerDashboard"
-            android:exported="true" />
-        -->
         <activity
             android:name=".CardApply"
             android:exported="true" />
         <activity
-            android:name=".PassengerDashboard"
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

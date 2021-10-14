@@ -40,7 +40,7 @@ public class DriverDashboard extends AppCompatActivity {
 
         passengerHistory.setOnClickListener(v -> {
 
-            Intent intent = new Intent(DriverDashboard.this,DriverPassengerDetails.class);
+            Intent intent = new Intent(DriverDashboard.this,TravelHistory.class);
             startActivity(intent);
 
         });
@@ -61,7 +61,7 @@ public class DriverDashboard extends AppCompatActivity {
 
             FirebaseAuth.getInstance().signOut();
             finish();
-            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(),Login.class);
             startActivity(intent);
 
         }

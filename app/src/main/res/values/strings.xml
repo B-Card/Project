@@ -19,10 +19,8 @@
     <string name="add">Add</string>
     <string name="enter_bus_time">Enter bus time</string>
     <string name="card_recharge">Card Recharge</string>
-    <string name="passenger">Passenger</string>
     <string name="bus_details">Bus Details</string>
     <string name="passenger_history">Passenger History</string>
-    <string name="enter_your_phone_number">Enter your phone number</string>
     <string name="enter_your_full_name">Enter your full name</string>
     <string name="enter_your_password">Enter your password</string>
     <string name="enter_your_mobile_number">Enter your mobile number</string>
@@ -35,5 +33,4 @@
     <string name="if_you_are_registered_please_login">If you are registered, please login</string>
     <string name="login">Login</string>
     <string name="forget_password">Forget password</string>
-    <string name="if_you_aren_t_registered_please_register">If you aren\'t registered, please register</string>
 </resources>

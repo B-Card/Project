@@ -49,7 +49,7 @@ public class PassengerDashboard extends AppCompatActivity {
 
         travelHistory.setOnClickListener(v -> {
 
-            Intent intent = new Intent(PassengerDashboard.this,TravelHistory.class);
+            Intent intent = new Intent(PassengerDashboard.this,PassengerTravelHistory.class);
             startActivity(intent);
 
         });
@@ -69,9 +69,8 @@ public class PassengerDashboard extends AppCompatActivity {
         if(item.getItemId()==R.id.signoutmenu){
 
             FirebaseAuth.getInstance().signOut();
-            finish();
-            Intent intent = new Intent(getApplicationContext(),MainActivity.class);
-            startActivity(intent);
+            startActivity ( new Intent ( getApplicationContext (), Login.class ) );
+            finish ();
 
         }
         return super.onOptionsItemSelected(item);

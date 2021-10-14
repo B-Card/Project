@@ -12,40 +12,48 @@ import android.view.MenuItem;
 
 import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
-public class TravelHistory extends AppCompatActivity {
+import java.util.ArrayList;
+import java.util.List;
 
-    RecyclerView recview3;
-    MyAdapter3 adapter3;
+public class PassengerTravelHistory extends AppCompatActivity {
+
+    RecyclerView recViewPassengerTravelHistory;
+    MyAdapter3 adapterPassengerTravelHistory;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_travel_history);
+        setContentView(R.layout.activity_passenger_travel_history);
 
-        recview3=findViewById(R.id.recViewTravelHistoryId);
-        recview3.setLayoutManager(new LinearLayoutManager(this));
+        recViewPassengerTravelHistory=findViewById(R.id.recViewPassengerTravelHistoryId);
+        recViewPassengerTravelHistory.setLayoutManager(new LinearLayoutManager(this));
 
         FirebaseRecyclerOptions<Model3> options =
                 new FirebaseRecyclerOptions.Builder<Model3>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("journey"), Model3.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference("journey").orderByChild("cardNo").equalTo("1111117645"), Model3.class)
                         .build();
 
-        adapter3 = new MyAdapter3(options);
-        recview3.setAdapter(adapter3);
+        adapterPassengerTravelHistory = new MyAdapter3(options);
+        recViewPassengerTravelHistory.setAdapter(adapterPassengerTravelHistory);
 
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        adapter3.startListening();
+        adapterPassengerTravelHistory.startListening();
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        adapter3.stopListening();
+        adapterPassengerTravelHistory.stopListening();
     }
 
     @Override
@@ -61,7 +69,7 @@ public class TravelHistory extends AppCompatActivity {
         if(item.getItemId()==R.id.signoutmenu){
 
             FirebaseAuth.getInstance().signOut();
-            startActivity ( new Intent ( getApplicationContext (), Login.class ) );
+            startActivity ( new Intent( getApplicationContext (), Login.class ) );
             finish ();
 
         }
