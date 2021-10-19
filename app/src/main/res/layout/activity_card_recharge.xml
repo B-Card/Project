@@ -37,22 +37,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="50dp">
-
-            <TextView
-                android:id="@+id/balanceID"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="Current Balance: "
-                android:textColor="#FFFF"
-                android:textSize="20dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="MissingConstraints" />
+            android:layout_marginTop="25dp">
 
             <EditText
                 android:id="@+id/cardNumberId"
@@ -62,12 +47,12 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="16dp"
                 android:ems="10"
-                android:hint="Enter your card number"
+                android:hint="@string/enter_your_card_number"
                 android:textColorHint="#FFFF"
                 android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/balanceID"
+                app:layout_constraintTop_toTopOf="parent"
                 android:importantForAutofill="no" />
 
             <EditText
@@ -78,7 +63,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="16dp"
                 android:ems="10"
-                android:hint="Enter your recharge amount"
+                android:hint="@string/enter_your_recharge_amount"
                 android:textColorHint="#FFFF"
                 android:inputType="number"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -93,7 +78,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
-                android:text="recharge"
+                android:text="@string/recharge"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/rechargeAmountId" />

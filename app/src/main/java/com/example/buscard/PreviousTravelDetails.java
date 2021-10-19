@@ -14,13 +14,45 @@ import com.firebase.ui.database.FirebaseRecyclerOptions;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class PreviousTravelDetails extends AppCompatActivity
-{
+public class PreviousTravelDetails extends AppCompatActivity {
+
+    RecyclerView recviewHistory;
+    HistoryAdapter historyAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_previous_travel_details);
 
+        recviewHistory=findViewById(R.id.recViewHistoryId);
+        recviewHistory.setLayoutManager(new LinearLayoutManager(this));
+
+        FirebaseRecyclerOptions<History> options =
+                new FirebaseRecyclerOptions.Builder<History>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("journey"), History.class)
+                        .build();
+
+        historyAdapter = new HistoryAdapter(options);
+        recviewHistory.setAdapter(historyAdapter);
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        historyAdapter.startListening();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        historyAdapter.stopListening();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        getMenuInflater().inflate(R.menu.menu_layout,menu);
+        return super.onCreateOptionsMenu(menu);
     }
 
     @Override

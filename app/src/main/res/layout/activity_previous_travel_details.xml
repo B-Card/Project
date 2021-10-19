@@ -8,7 +8,7 @@
     tools:context=".PreviousTravelDetails">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recViewPreviousTravelDetailsId"
+        android:id="@+id/recViewHistoryId"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="1dp"

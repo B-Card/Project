@@ -21,10 +21,10 @@ import com.google.firebase.database.FirebaseDatabase;
 public class CardRecharge extends AppCompatActivity {
 
     EditText cNo, rAmount;
-    TextView cBalance;
     Button rechargeButton;
     DatabaseReference databaseReference;
     ProgressBar progressBar;
+    int ans = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,7 +34,6 @@ public class CardRecharge extends AppCompatActivity {
         cNo = findViewById(R.id.cardNumberId);
         rAmount = findViewById(R.id.rechargeAmountId);
         rechargeButton = findViewById(R.id.rechargeButtonId);
-        cBalance = findViewById(R.id.balanceID);
         progressBar = findViewById(R.id.progressBarId);
 
         databaseReference = FirebaseDatabase.getInstance().getReference("balance");
@@ -47,7 +46,6 @@ public class CardRecharge extends AppCompatActivity {
 
         String cardNumber = cNo.getText().toString().trim();
         String rechargeAmount = rAmount.getText().toString().trim();
-        String currentBalance = cBalance.getText().toString().trim();
 
         if(cardNumber.isEmpty())
         {
@@ -61,6 +59,10 @@ public class CardRecharge extends AppCompatActivity {
             rAmount.requestFocus();
         }
 
+        int amount = Integer.parseInt(rAmount.getText().toString());
+        ans = ans+amount;
+        String currentBalance = Integer.toString(ans);
+
         progressBar.setVisibility(View.VISIBLE);
 
         String key = databaseReference.push().getKey();
@@ -71,13 +73,8 @@ public class CardRecharge extends AppCompatActivity {
         progressBar.setVisibility(View.GONE);
         Toast.makeText(getApplicationContext(), "Your card is recharged.",Toast.LENGTH_LONG ).show();
 
-        cBalance.setText(rechargeAmount);
-
         cNo.setText("");
         rAmount.setText("");
-
-        Intent intent = new Intent(CardRecharge.this, CardRecharge.class);
-        startActivity(intent);
 
     }
 

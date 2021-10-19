@@ -39,4 +39,8 @@
     <string name="fare">Fare :</string>
     <string name="starting_point">Starting Point:</string>
     <string name="ending_point">Ending Point :</string>
+    <string name="recharge">recharge</string>
+    <string name="enter_your_recharge_amount">Enter your recharge amount</string>
+    <string name="enter_your_card_number">Enter your card number</string>
+
 </resources>
