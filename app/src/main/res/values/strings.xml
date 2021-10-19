@@ -33,4 +33,10 @@
     <string name="if_you_are_registered_please_login">If you are registered, please login</string>
     <string name="login">Login</string>
     <string name="forget_password">Forget password</string>
+    <string name="date">Date :</string>
+    <string name="card_no">Card No :</string>
+    <string name="distance">Distance :</string>
+    <string name="fare">Fare :</string>
+    <string name="starting_point">Starting Point:</string>
+    <string name="ending_point">Ending Point :</string>
 </resources>

@@ -19,7 +19,7 @@
         <entry key="..\:/Project/app/src/main/res/layout/activity_main.xml" value="0.209375" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_passenger_dashboard.xml" value="0.209375" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_passenger_details.xml" value="0.209375" />
-        <entry key="..\:/Project/app/src/main/res/layout/activity_passenger_previous_travel_details.xml" value="0.209375" />
+        <entry key="..\:/Project/app/src/main/res/layout/activity_passenger_previous_travel_details.xml" value="0.14713216957605985" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_passenger_travel_history.xml" value="0.1" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_previous_travel_details.xml" value="0.209375" />
         <entry key="..\:/Project/app/src/main/res/layout/activity_register.xml" value="0.33" />
@@ -29,8 +29,8 @@
         <entry key="..\:/Project/app/src/main/res/layout/singlerow.xml" value="0.25" />
         <entry key="..\:/Project/app/src/main/res/layout/singlerow2.xml" value="0.209375" />
         <entry key="..\:/Project/app/src/main/res/layout/singlerow3.xml" value="0.12345679012345678" />
-        <entry key="..\:/Project/app/src/main/res/layout/singlerow4.xml" value="0.33" />
-        <entry key="..\:/Project/app/src/main/res/layout/singlerow5.xml" value="0.209375" />
+        <entry key="..\:/Project/app/src/main/res/layout/singlerow4.xml" value="0.228125" />
+        <entry key="..\:/Project/app/src/main/res/layout/singlerow5.xml" value="0.18" />
         <entry key="..\:/Project/app/src/main/res/menu/menu_layout.xml" value="0.1171875" />
         <entry key="app/src/main/res/drawable/gradient_background.xml" value="0.3458333333333333" />
         <entry key="app/src/main/res/layout/activity_admin_dashboard.xml" value="0.3296875" />

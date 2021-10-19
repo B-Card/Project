@@ -16,9 +16,7 @@ public class Model4 {
         this.endingPoint = endingPoint;
     }
 
-    public String getDate() {
-        return date;
-    }
+    public String getDate() { return date; }
 
     public void setDate(String date) {
         this.date = date;
