@@ -10,7 +10,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BusCard">
         <activity
-            android:name=".PassengerTravelHistory"
+            android:name=".PassengerPreviousTravelDetails"
+            android:exported="true" />
+        <activity
+            android:name=".PreviousTravelDetails"
             android:exported="true" />
         <activity
             android:name=".PassengerDashboard"
@@ -23,9 +26,6 @@
             android:exported="true" />
         <activity
             android:name=".BusDetails"
-            android:exported="true" />
-        <activity
-            android:name=".TravelHistory"
             android:exported="true" />
         <activity
             android:name=".CardRecharge"

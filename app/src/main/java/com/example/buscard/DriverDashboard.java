@@ -40,7 +40,7 @@ public class DriverDashboard extends AppCompatActivity {
 
         passengerHistory.setOnClickListener(v -> {
 
-            Intent intent = new Intent(DriverDashboard.this,TravelHistory.class);
+            Intent intent = new Intent(DriverDashboard.this,PreviousTravelDetails.class);
             startActivity(intent);
 
         });

@@ -49,7 +49,7 @@ public class PassengerDashboard extends AppCompatActivity {
 
         travelHistory.setOnClickListener(v -> {
 
-            Intent intent = new Intent(PassengerDashboard.this,PassengerTravelHistory.class);
+            Intent intent = new Intent(PassengerDashboard.this,PassengerPreviousTravelDetails.class);
             startActivity(intent);
 
         });

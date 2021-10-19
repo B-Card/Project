@@ -39,7 +39,7 @@ public class AdminDashboard extends AppCompatActivity {
         });
         passengerHistory.setOnClickListener(v -> {
 
-            Intent intent = new Intent(AdminDashboard.this,TravelHistory.class);
+            Intent intent = new Intent(AdminDashboard.this,PreviousTravelDetails.class);
             startActivity(intent);
 
         });
