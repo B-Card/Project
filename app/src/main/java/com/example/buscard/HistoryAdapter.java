@@ -23,6 +23,7 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<History,HistoryAdapt
     {
         holder.cardNo.setText(history.getCardNo());
         holder.date.setText(history.getDate());
+        holder.distance.setText(history.getDistance());
         holder.endingPoint.setText(history.getEndingPoint());
         holder.fare.setText(history.getFare());
         holder.startingPoint.setText(history.getStartingPoint());
@@ -42,12 +43,11 @@ public class HistoryAdapter extends FirebaseRecyclerAdapter<History,HistoryAdapt
         public historyviewholder(@NonNull View itemView) {
             super(itemView);
             cardNo = itemView.findViewById(R.id.cardNoId);
-            date = itemView.findViewById(R.id.dateId);
-            distance = itemView.findViewById(R.id.distanceId);
-            endingPoint = itemView.findViewById(R.id.endingPointId);
-            fare = itemView.findViewById(R.id.fareId);
-            startingPoint = itemView.findViewById(R.id.startingPointId);
+            cardNo = itemView.findViewById(R.id.dateId);
+            cardNo = itemView.findViewById(R.id.distanceId);
+            cardNo = itemView.findViewById(R.id.endingPointId);
+            cardNo = itemView.findViewById(R.id.fareId);
+            cardNo = itemView.findViewById(R.id.startingPointId);
         }
     }
 }
-
