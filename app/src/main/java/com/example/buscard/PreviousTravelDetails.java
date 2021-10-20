@@ -28,7 +28,7 @@ public class PreviousTravelDetails extends AppCompatActivity {
 
         FirebaseRecyclerOptions<History> options =
                 new FirebaseRecyclerOptions.Builder<History>()
-                        .setQuery(FirebaseDatabase.getInstance().getReference().child("journey"), History.class)
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("travels"), History.class)
                         .build();
 
         historyAdapter = new HistoryAdapter(options);
